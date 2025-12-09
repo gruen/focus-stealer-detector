@@ -1,6 +1,12 @@
-# focus-stealer
+# Focus Stealer
 
-A simple CLI tool that monitors and logs which application has focus on macOS.
+A simple tool that monitors and logs which application has focus on macOS.
+
+The Problem: Something I recently installed on MacOS kept stealing my windows focus while typing.
+
+The Answer: This script.
+
+**Spoiler:** It was Logitech. Get your shit together, fam. `/Applications/Utilities/LogiPluginService.app`
 
 ## Features
 
