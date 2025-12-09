@@ -23,8 +23,10 @@ Download the latest release from the [Releases](../../releases) page.
 
 ### Build from Source
 
+Requires Go 1.21+ installed.
+
 ```bash
-go build -o focus-stealer app.go
+go build -o focus-stealer main.go
 ```
 
 ## Usage
@@ -48,8 +50,15 @@ go build -o focus-stealer app.go
 
 ## Requirements
 
-- macOS (uses AppleScript via `osascript`)
-- Accessibility permissions for Terminal/iTerm (grant when prompted)
+- macOS 10.15+ (uses AppleScript via `osascript`, included with macOS)
+
+### Permissions
+
+On first run, macOS will prompt for Accessibility permissions. Grant access to the terminal app you're using (Terminal, iTerm, etc.):
+
+**System Settings → Privacy & Security → Accessibility** → Enable your terminal app
+
+**Note:** Pre-built binaries have no external dependencies. Building from source requires only Go.
 
 ## Author
 
